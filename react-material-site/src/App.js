@@ -2,11 +2,13 @@ import './App.css';
 import React from 'react';
 // just provides cross browser style normalization/consistency (diff browsers/older browsers)
 import CssBaseline from '@material-ui/core/CssBaseline';
+import NavigationBar from './NavBar';
 
 function App() {
   return (
     <div className='App'>
-      <CssBaseline/>
+      <CssBaseline />
+      <NavigationBar />
       <h1>Welcome</h1>
     </div>
   );
