@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 // just provides cross browser style normalization/consistency (diff browsers/older browsers)
 import CssBaseline from '@material-ui/core/CssBaseline';
-import NavigationBar from './NavBar';
+import NavigationBar from './Components/NavBar';
 
 function App() {
   return (
