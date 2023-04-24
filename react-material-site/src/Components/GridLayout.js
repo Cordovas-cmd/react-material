@@ -14,6 +14,15 @@ const useStyles = makeStyles((theme) => ({
     },
     secondRowSecondItem: {
         backgroundColor: 'orange'
+    },
+    thirdRowFirstItem: {
+        backgroundColor: 'grey'
+    },
+    thirdRowSecondItem: {
+        backgroundColor: 'skyblue'
+    },
+    thirdRowThirdItem: {
+        backgroundColor: 'violet'
     }
     
 }))
@@ -25,23 +34,40 @@ export default function GridLayout() {
         <Grid container spacing={3}>
 
             {/* Setting size of grid item 12=100% width etc.. */}
-            <Grid item lg={4} sm={4} xs={12}>
-
+            <Grid item lg={12} sm={12} xs={12}>
             <Typography className={classes.mainGridItem}>
-                Main Grid Item
+                Main Grid Item Main Grid Item Main Grid Item Main Grid Item Main Grid Item Main Grid Item Main Grid Item 
+                Main Grid Item Main Grid Item Main Grid Item Main Grid Item Main Grid Item Main Grid Item Main Grid Item 
             </Typography>
-
             </Grid>
 
-            <Grid item sm={4} xs={12}>
+            <Grid item sm={6} xs={12}>
             <Typography className={classes.secondRowFirstItem}>
                 Second Row, First Item
             </Typography>
             </Grid>
 
-            <Grid item sm={4} xs={12}>
+            <Grid item sm={6} xs={12}>
             <Typography className={classes.secondRowSecondItem}>
                 Second Row, Second Item
+            </Typography>
+            </Grid>
+
+            <Grid item sm={4} xs={12}>
+            <Typography className={classes.thirdRowFirstItem}>
+                Third Row, First Item
+            </Typography>
+            </Grid>
+
+            <Grid item sm={4} xs={12}>
+            <Typography className={classes.thirdRowSecondItem}>
+                Third Row, Second Item
+            </Typography>
+            </Grid>
+
+            <Grid item sm={4} xs={12}>
+            <Typography className={classes.thirdRowThirdItem}>
+                Third Row, Third Item
             </Typography>
             </Grid>
 
