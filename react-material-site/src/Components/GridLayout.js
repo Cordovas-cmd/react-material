@@ -3,6 +3,8 @@ import React from 'react';
 import { Grid } from '@material-ui/core/';
 import { Typography } from '@material-ui/core/';
 import {  makeStyles } from '@material-ui/core/';
+import MainGridItem from './MainGridItem';
+
 
 const useStyles = makeStyles((theme) => ({
 
@@ -35,10 +37,7 @@ export default function GridLayout() {
 
             {/* Setting size of grid item 12=100% width etc.. */}
             <Grid item lg={12} sm={12} xs={12}>
-            <Typography className={classes.mainGridItem}>
-                Main Grid Item Main Grid Item Main Grid Item Main Grid Item Main Grid Item Main Grid Item Main Grid Item 
-                Main Grid Item Main Grid Item Main Grid Item Main Grid Item Main Grid Item Main Grid Item Main Grid Item 
-            </Typography>
+           <MainGridItem />
             </Grid>
 
             <Grid item sm={6} xs={12}>
